@@ -1,0 +1,167 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /*
+    list-style: none = No marker is shown
+    */
+}
+
+a {
+    color: #34495e;
+    text-decoration: none;
+    /*
+      text-decoration: none - is used here to not show underlining under an anchor element when a mouse hovers over it.
+    */
+}
+
+
+h1{ /* Maybe unnecessary */
+    text-align: center;
+}
+
+section {
+    padding: 10px 15px;
+    margin: 10px;
+    display: block;
+    /*
+      display: block - displays an element as a block element. It starts on a new line, and takes up the whole width
+   */
+}
+
+.logo {
+    padding-top: .5em;
+    padding-right: 1em;
+
+    font-size: 1em;
+}
+
+.header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border: 1px solid #646174;
+    background-color: #a2ccea;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.75);
+
+    /*
+    Navigation bar scrolling
+     */
+    position: sticky;
+    top: 0;
+
+    border-radius: 5px;
+}
+
+.nav {
+    margin-top: 5px;
+}
+
+.nav a {
+    padding: 15px 40px;
+    border-radius: 1em;
+    margin: 0.7em;
+    background-color: #bc94de;
+    /*padding: 1em 2.5em;*/
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    color: #34495e;
+    font-size: .99em;
+}
+
+/* Pseudo-class selector */
+.nav a:hover {
+    background-color: #7ebeb6;
+    color: #092747;
+}
+
+/*
+  Applies when the browser's width is 800px wide or wider:
+*/
+
+@media (min-width: 600px) {
+    .header,
+    .nav {
+        display: flex;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*
+ Applies when the browser's width is 1000px wide or wider:
+ */
+
+@media (min-width: 900px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/*
+ Removes the logo when screen width is less than 800 px.
+ */
+
+@media (max-width: 900px) {
+    .logo{
+        display: none;
+    }
+}
+
+.grid {
+    margin: 20px auto;
+    width: 100%;
+    border: 1px solid #746161;
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: auto auto;
+    /*
+      grid-template-columns - the grid-template-columns CSS property defines the numbers and
+      sizing functions of the grid columns.
+    */
+    gap: 10px 10px;
+    /*
+    gap: row-gap and column-gap.
+    */
+}
+
+.grid p {
+    background-color: rgb(177, 164, 164);
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.grid p:hover{
+    text-shadow: 2px 2px 5px #092747;
+}
+
+@media (max-width: 500px) {
+    .grid{
+        grid-template-columns: auto;
+    }
+    /*
+    Changes to one column
+    alternative: 1fr
+     */
+}
+
+@media handheld {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
