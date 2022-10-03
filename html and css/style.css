@@ -6,9 +6,13 @@
 body{
     line-height: 1.6;
     margin: 0;
+    background-color: burlywood;
+    /*
     padding:0;
     height: 100vh;
     overflow: hidden;
+
+     */
 }
 
 ul{
@@ -28,36 +32,100 @@ a {
     */
 }
 
-
-
-section {
-    padding: 10px 15px;
-    margin: 10px;
-    display: block;
-    /*
-      display: block - displays an element as a block element. It starts on a new line, and takes up the whole width
-   */
+p{
+    font-size: large;
 }
 
+h1{
+    text-align: center;
+}
+
+main{
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+article{
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    width: 50%;
+    background-color: #d09256;
+}
+
+footer{
+    margin:0.1em;
+    border-radius: 5px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #092747;
+}
+
+.article-header{
+    margin: 0.2em 0.2em 1em;
+    padding: 0.2em;
+    border-radius: 1em;
+    display: flex;
+    background-color: #5e99cc;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.article-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-image{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.like-picture{
+    width: 7%;
+    height: 7%;
+    min-height: 40px;
+    min-width: 40px;
+}
+
+.posting-date{
+    font-weight: bold;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+/*Icon in the nav bar*/
 .logo {
     padding-top: .5em;
     padding-right: 1em;
+}
 
-    font-size: 1em;
+/*Icon in the posts*/
+.post-logo{
+    padding-top: .6em;
+    padding-left: 1em;
 }
 
 .header {
     padding-top: .5em;
     padding-bottom: .5em;
+    padding-left: .5em;
     border: 1px solid #646174;
     background-color: #a2ccea;
     box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.75);
 
     /*
     Navigation bar scrolling
-     */
+    */
     position: sticky;
     top: 0;
+
 
     border-radius: 5px;
 }
@@ -71,7 +139,6 @@ section {
     border-radius: 1em;
     margin: 0.7em;
     background-color: #bc94de;
-    /*padding: 1em 2.5em;*/
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
@@ -86,10 +153,6 @@ section {
     color: #092747;
 }
 
-/*
-  Applies when the browser's width is 800px wide or wider:
-*/
-
 @media (min-width: 600px) {
     .header,
     .nav {
@@ -101,20 +164,15 @@ section {
     }
 }
 
-/*
- Applies when the browser's width is 1000px wide or wider:
- */
-
 @media (min-width: 900px) {
+    p{
+        font-size: larger;
+    }
     .header {
         flex-direction: row;
         justify-content: space-between;
     }
 }
-
-/*
- Removes the logo when screen width is less than 800 px.
- */
 
 @media (max-width: 900px) {
     .logo{
@@ -122,47 +180,15 @@ section {
     }
 }
 
-.grid {
-    margin: 20px auto;
-    width: 100%;
-    border: 1px solid #746161;
-    background-color: #ddd;
-    display: grid;
-    grid-template-columns: auto auto;
-    /*
-      grid-template-columns - the grid-template-columns CSS property defines the numbers and
-      sizing functions of the grid columns.
-    */
-    gap: 10px 10px;
-    /*
-    gap: row-gap and column-gap.
-    */
-}
-
-.grid p {
-    background-color: rgb(177, 164, 164);
-    color: white;
-    padding: 20px;
-    font-weight: bold;
-    text-align: center;
-}
-.grid p:hover{
-    text-shadow: 2px 2px 5px #092747;
-}
-
 @media (max-width: 500px) {
-    .grid{
-        grid-template-columns: auto;
+    .article-header{
+        flex-direction: column;
     }
-    /*
-    Changes to one column
-    alternative: 1fr
-     */
 }
 
-@media handheld {
-    .grid{
-        grid-template-columns: 1fr;
+@media (max-width: 350px) {
+    p{
+        font-size: medium;
     }
 }
 
