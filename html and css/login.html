@@ -9,7 +9,7 @@
 <body>
     <header class="header">
         <ul class="nav">
-            <li><a href="login.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="addPost.html">Add post</a></li>
         </ul>
 
@@ -23,14 +23,16 @@
         <p>OR</p>
         <p>Please log in</p>
         <form method="post">
-            <div class="textfield">
+            <div>
                 <input type="text" placeholder="Email" required>
             </div>
-            <div class="textfield">
+            <div>
                 <input type="text" placeholder="Password" required>
             </div>
             <div>
-                <a href="index.html"><button id="login">Log In</button></a>
+                <form>
+                    <button formaction="index.html" id="login">Log In</button>
+                </form>
             </div>
             <div class="accountlink"><a href="login.html">Forgot password?</a></div>
         </form>
