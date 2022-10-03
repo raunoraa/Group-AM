@@ -200,3 +200,15 @@ section {
 .accountlink{
     text-align: center;
 }
+
+#login { /* id selector */
+    cursor: pointer;
+    color:white;
+    background-color: blue;
+
+}
+
+#login:active { /* id selector, pseudo-class */
+    color: blue;
+    background-color: white;
+}
