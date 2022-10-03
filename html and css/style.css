@@ -6,6 +6,9 @@
 body{
     line-height: 1.6;
     margin: 0;
+    padding:0;
+    height: 100vh;
+    overflow: hidden;
 }
 
 ul{
@@ -26,9 +29,6 @@ a {
 }
 
 
-h1{ /* Maybe unnecessary */
-    text-align: center;
-}
 
 section {
     padding: 10px 15px;
@@ -164,4 +164,39 @@ section {
     .grid{
         grid-template-columns: 1fr;
     }
+}
+
+.center{ /* class selector */
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: lightgray;
+    border-radius: 10px;
+}
+
+.center a {
+    align-self: center;
+}
+
+.center h3{
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.center p{
+    text-align: center;
+}
+
+.center form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+
+.accountlink{
+    text-align: center;
 }
