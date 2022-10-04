@@ -191,6 +191,10 @@ main~footer{ /*General sibling selector*/
     }
 }
 
+.center > * { /* Child selector */
+    margin: 10px;
+}
+
 .center{ /* class selector */
     position:absolute;
     top: 50%;
@@ -201,7 +205,7 @@ main~footer{ /*General sibling selector*/
     border-radius: 10px;
 }
 
-.center a {
+.center a { /*Descendant selector */
     align-self: center;
 }
 
@@ -250,7 +254,7 @@ main~footer{ /*General sibling selector*/
     border-radius: 10px;
 }
 
-.add_post li + li{
+.add_post li + li{ /* Adjacent sibling selector */
     margin-top: 1em;
 }
 
