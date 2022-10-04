@@ -7,6 +7,34 @@
     <title>Homework 1</title>
 </head>
 <body>
+    <header class="header">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+        </ul>
 
+        <a class="logo" href="#"><img src="/Images/profileIcon.png" width="50" height="50" alt="Profile picture"></a>
+        
+    </header>
+
+    <div class="add_post">
+        <form>
+            <ul>
+                <li>
+                    <label for="post">Post body</label>
+                    <textarea id="post" name="post_text"></textarea>
+                </li>
+                <li>
+                    <label>Select file</label>
+                    <input type="file" name="choose_file" id="fileUpload" hidden/>
+                    <label for="fileUpload" id="file_choosen">Choose file</label>
+                </li>
+                <li class="button">
+                    <button type="submit" formaction="index.html">Create post</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+
+    
 </body>
 </html>
