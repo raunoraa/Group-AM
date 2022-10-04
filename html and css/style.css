@@ -36,18 +36,18 @@ p{
     font-size: large;
 }
 
-h1{
+footer>h1{ /*Child selector*/
     text-align: center;
 }
 
-main{
+header+main{ /*Adjacent Sibling Selector*/
     margin-top: 2em;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-article{
+main article{ /*Descendant selector*/
     margin: 1em;
     padding: 1em;
     border-radius: 1em;
@@ -55,7 +55,7 @@ article{
     background-color: #d09256;
 }
 
-footer{
+main~footer{ /*General sibling selector*/
     margin:0.1em;
     border-radius: 5px;
     border: 1px solid white;
@@ -114,9 +114,7 @@ footer{
 }
 
 .header {
-    padding-top: .5em;
-    padding-bottom: .5em;
-    padding-left: .5em;
+    padding: .5em;
     border: 1px solid #646174;
     background-color: #a2ccea;
     box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.75);
@@ -225,10 +223,12 @@ footer{
 }
 
 .accountlink{
+    margin: 0.5em;
     text-align: center;
 }
 
 #login { /* id selector */
+    margin: 1em 1em 0;
     cursor: pointer;
     color:white;
     background-color: blue;
@@ -284,7 +284,7 @@ footer{
 
 .add_post button{
     display: inline-block;
-    margin-left: 0.5;
+    margin-left: 0.5em;
     background-color: #bc94de;
     padding: 0.5rem;
     cursor: pointer;
@@ -299,7 +299,7 @@ footer{
 #file_choosen{
     display: inline-block;
     width: 22%;
-    margin-left: 0.5;
+    margin-left: 0.5em;
     background-color: #7ebeb6;
     padding: 0.5rem;
     cursor: pointer;
