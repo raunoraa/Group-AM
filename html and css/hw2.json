@@ -10,7 +10,9 @@
         "classOfPicture": "article-image",
         "classOfButton": "like-picture",
         "classofArticleHeader": "article-header",
-        "classofArticleBody": "article-body"
+        "classofArticleBody": "article-body",
+        "classofProfileIcon": "post-logo",
+        "classofDate": "posting-date"
     },
 
     {
@@ -24,7 +26,9 @@
         "classOfPicture": "article-image",
         "classOfButton": "like-picture",
         "classofArticleHeader": "article-header",
-        "classofArticleBody": "article-body"
+        "classofArticleBody": "article-body",
+        "classofProfileIcon": "post-logo",
+        "classofDate": "posting-date"
     },
 
     {
@@ -38,7 +42,9 @@
         "classOfPicture": "article-image",
         "classOfButton": "like-picture",
         "classofArticleHeader": "article-header",
-        "classofArticleBody": "article-body"
+        "classofArticleBody": "article-body",
+        "classofProfileIcon": "post-logo",
+        "classofDate": "posting-date"
     },
 
     {
@@ -52,7 +58,9 @@
         "classOfPicture": "article-image",
         "classOfButton": "like-picture",
         "classofArticleHeader": "article-header",
-        "classofArticleBody": "article-body"
+        "classofArticleBody": "article-body",
+        "classofProfileIcon": "post-logo",
+        "classofDate": "posting-date"
     },
 
     {
@@ -66,7 +74,9 @@
         "classOfPicture": "article-image",
         "classOfButton": "like-picture",
         "classofArticleHeader": "article-header",
-        "classofArticleBody": "article-body"
+        "classofArticleBody": "article-body",
+        "classofProfileIcon": "post-logo",
+        "classofDate": "posting-date"
     },
 
     {
@@ -80,7 +90,9 @@
         "classOfPicture": "article-image",
         "classOfButton": "like-picture",
         "classofArticleHeader": "article-header",
-        "classofArticleBody": "article-body"
+        "classofArticleBody": "article-body",
+        "classofProfileIcon": "post-logo",
+        "classofDate": "posting-date"
     },
 
     {
@@ -94,7 +106,9 @@
         "classOfPicture": "article-image",
         "classOfButton": "like-picture",
         "classofArticleHeader": "article-header",
-        "classofArticleBody": "article-body"
+        "classofArticleBody": "article-body",
+        "classofProfileIcon": "post-logo",
+        "classofDate": "posting-date"
     },
 
     {
@@ -108,7 +122,9 @@
         "classOfPicture": "article-image",
         "classOfButton": "like-picture",
         "classofArticleHeader": "article-header",
-        "classofArticleBody": "article-body"
+        "classofArticleBody": "article-body",
+        "classofProfileIcon": "post-logo",
+        "classofDate": "posting-date"
     },
 
     {
@@ -122,7 +138,9 @@
         "classOfPicture": "article-image",
         "classOfButton": "like-picture",
         "classofArticleHeader": "article-header",
-        "classofArticleBody": "article-body"
+        "classofArticleBody": "article-body",
+        "classofProfileIcon": "post-logo",
+        "classofDate": "posting-date"
     },
 
     {
@@ -136,7 +154,9 @@
         "classOfPicture": "article-image",
         "classOfButton": "like-picture",
         "classofArticleHeader": "article-header",
-        "classofArticleBody": "article-body"
+        "classofArticleBody": "article-body",
+        "classofProfileIcon": "post-logo",
+        "classofDate": "posting-date"
     }
 
 ]

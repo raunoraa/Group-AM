@@ -107,10 +107,29 @@ main~footer{ /*General sibling selector*/
     padding-right: 1em;
 }
 
-/*Icon in the posts*/
+
+/*Icon container in the posts*/
 .post-logo{
     padding-top: .6em;
     padding-left: 1em;
+
+    display: flex;
+
+    /*will change with size*/
+    /*flex-direction: column;*/
+}
+.post-name{
+    padding-left: 1.5em;
+    padding-top: 0.5em;
+    font-size: larger;
+    color: #092747;
+    font-weight: bold;
+
+    /*will change with size*/
+    /*
+    padding-left: 0em;
+    font-size: large;
+    */
 }
 
 .header {
@@ -179,9 +198,17 @@ main~footer{ /*General sibling selector*/
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
     .article-header{
         flex-direction: column;
+    }
+    .post-logo{
+        flex-direction: column;
+    }
+    .post-name{
+        padding-top: 1em;
+        padding-left: 0.2em;
+        font-size: large;
     }
 }
 
