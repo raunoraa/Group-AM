@@ -12,7 +12,7 @@ window.onload = function(){
             }
     }
     window.onclick = function(event){
-        if(event.target.id == "" || !event.target.id == "header-image"){
+        if(event.target.id === "" || !event.target.id === "header-image" && event.target.id === "dropdown-label1" && event.target.id === "dropdown-label2"){
             document.getElementsByClassName("dropdownNav")[0].style.display = "none";
         }
     }
