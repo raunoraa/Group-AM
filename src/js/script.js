@@ -1,8 +1,8 @@
 window.onload = function(){
     
     //the next commented out row is for fetching online
-    fetch('https://api.npoint.io/dd97174d7d1e6f185fbd')
-    //fetch("/html and css/hw2.json")
+    //fetch('https://api.npoint.io/dd97174d7d1e6f185fbd')
+    fetch("/html and css/hw2.json")
         .then((response)=>response.json())
         .then(json => {
 
