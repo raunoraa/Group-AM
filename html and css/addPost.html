@@ -26,10 +26,10 @@
     </nav>
 
     <div class="add_post">
-        <form>
+        <form id="add-post-form">
             <ul>
                 <li>
-                    <label for="post">Post body</label>
+                    <label id="post-body-label" for="post">Post body</label>
                     <textarea id="post" name="post_text"></textarea>
                 </li>
                 <li>
@@ -38,7 +38,7 @@
                     <label for="fileUpload" id="file_choosen">Choose file</label>
                 </li>
                 <li class="button">
-                    <button type="submit" formaction="index.html">Create post</button>
+                    <button id="add-post-button" type="submit" formaction="index.html">Create post</button>
                 </li>
             </ul>
         </form>

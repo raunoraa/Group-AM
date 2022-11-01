@@ -312,7 +312,29 @@ main~footer{ /*General sibling selector*/
     background-color: white;
 }
 
+@media (max-width: 450px) {
+
+    #add-post-form {
+        position: fixed;
+        width: 280px;
+    }
+
+    #post-body-label{
+        text-align: left;
+    }
+
+    #post{
+        width: 180px;
+    }
+
+    #add-post-button{
+        margin-left: -1em;
+    }
+
+}
+
 .add_post form{
+    padding: 1em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -368,10 +390,10 @@ main~footer{ /*General sibling selector*/
 
 #file_choosen{
     display: inline-block;
-    width: 22%;
     margin-left: 0.5em;
     background-color: #7ebeb6;
-    padding: 0.5rem;
+    padding: 0.1rem;
+    text-align: center;
     cursor: pointer;
     font-family: sans-serif;
     border-radius: 0.3rem;
