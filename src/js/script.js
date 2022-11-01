@@ -1,14 +1,33 @@
 window.onload = function(){
     
     //the next commented out row is for fetching online
-    //fetch('https://api.npoint.io/dd97174d7d1e6f185fbd')
-    fetch("/html and css/hw2.json")
+    fetch('https://api.npoint.io/dd97174d7d1e6f185fbd')
+    //fetch("/html and css/hw2.json")
         .then((response)=>response.json())
         .then(json => {
 
             showJsoncontent(json);
         }
             )
+
+
+    document.getElementsByClassName("logo")[0].addEventListener("click",pictureClicked,true);
+
+    function pictureClicked(){
+        document.getElementsByClassName("dropdownNav")[0].style.display = "flex";
+    }
+
+    //dropdown menu will disappear if window width is changed to less than 900px (header picture will also disappear at the same time)
+    window.onresize = function(){
+        if(window.innerWidth<=900){
+            document.getElementsByClassName("dropdownNav")[0].style.display = "none";
+            }
+    }
+    window.onclick = function(event){
+        if(event.target.id == "" || !event.target.id == "header-image"){
+            document.getElementsByClassName("dropdownNav")[0].style.display = "none";
+        }
+    }
 }
 
 function showJsoncontent(jsonElements){
@@ -74,32 +93,5 @@ function showJsoncontent(jsonElements){
         const documentMain = document.getElementsByTagName("main")[0];
         documentMain.appendChild(newArticle);
         //in the end will add new article to </main>
-
-        /*
-        for (const arrElement of jsonElement.array) {
-            let liElement=document.createElement("li");
-            let liText=document.createTextNode(arrElement);
-
-            liElement.appendChild(liText);
-            ulElement.appendChild(liElement);
-        }
-
-        let truthValueText=document.createTextNode(jsonElement.boolean);
-        newDiv.appendChild(truthValueText);
-
-        let colorText=document.createTextNode(jsonElement.color);
-        newDiv.appendChild(colorText);
-
-        let numberText=document.createTextNode(jsonElement.number);
-        newDiv.appendChild(numberText)
-
-        let objectText=document.createTextNode(jsonElement.object);
-        newDiv.appendChild(objectText);
-
-        let textText=document.createTextNode(jsonElement.string)
-        newDiv.appendChild(textText)
-
-        document.body.appendChild(newDiv);
-        */
     }
 }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/src/js/secondaryscript.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Homework 1</title>
 </head>
@@ -12,9 +13,17 @@
             <li><a href="index.html">Home</a></li>
         </ul>
 
-        <a class="logo" href="#"><img src="/Images/profileIcon.png" width="50" height="50" alt="Profile picture"></a>
+        <a class="logo"><img id="header-image" src="/Images/profileIcon.png" width="60" height="60" alt="Profile picture"></a>
         
     </header>
+
+    <nav class="dropdownNav">
+        <div id="dropdown-content">
+            <label id="dropdown-label">John Doe</label>
+            <label id="dropdown-label">john.doe@ut.ee</label>
+            <a href="login.html">Log Out</a>
+        </div>
+    </nav>
 
     <div class="add_post">
         <form>

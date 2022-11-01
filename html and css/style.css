@@ -40,8 +40,9 @@ footer>h1{ /*Child selector*/
     text-align: center;
 }
 
-header+main{ /*Adjacent Sibling Selector*/
-    margin-top: 2em;
+/*Was previously header+main*/
+main{
+    padding-top: 3em;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -105,8 +106,49 @@ main~footer{ /*General sibling selector*/
 .logo {
     padding-top: .5em;
     padding-right: 1em;
+    cursor: pointer;
 }
 
+.dropdownNav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    display: none;
+}
+
+#dropdown-content{
+    position: fixed;
+    padding-top: 8.4em;
+}
+
+#dropdown-content a {
+    color: black;
+    padding: 0.4em;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    background-color: #4872a0;
+    border-style: solid;
+    border-color: #000;
+    cursor: pointer;
+}
+
+#dropdown-content label {
+    color: black;
+    padding: 0.4em;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    background-color: #4872a0;
+    border-style: solid;
+    border-color: #000;
+}
+
+#dropdown-content a:hover {background-color: #ddd;}
+
+#dropdown-content label:hover {background-color: #ddd;}
 
 /*Icon container in the posts*/
 .post-logo{
